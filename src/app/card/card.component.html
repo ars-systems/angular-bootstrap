@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="finance">
+    <img src="/assets/img/info.png" alt="">
+  </div>
+  <div class="info col p-3">
+    <h5 class="m-0">
+      {{item.name}}
+    </h5>
+    <h6 class="m-0 text-muted">
+      {{item.location.city}}, {{item.location.canton}}
+    </h6>
+  </div>
+  <img src="https://{{item.images[0].url}}" alt="Card image ">
+  <div class="card-body m-0 p-0">
+    <div class="column">
+      <div class="row m-0 col-12 ">
+        <div class="row p-2 border-top col-12  ml-0 ">
+          <div class="p-0 col-6 ">Available to invest</div>
+          <div class="p-0 col-6  text-right">CHF {{item.available_to_invest}}</div>
+        </div>
+        <div class="progress col-12  p-0">
+          <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+            [ngStyle]="{width:item.loan_to_value+'%'}" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="row p-2 border-top border-bottom  col-12  ml-0 ">
+          <div class="p-0 col-6 ">Purchase cost</div>
+          <div class="p-0 col-6  text-right">CHF {{item.purchase_price}}</div>
+        </div>
+        <div class="row p-2 border-top border-bottom col-12 ml-0 ">
+          <div class="p-0 col-6 ">Min. Investment</div>
+          <div class="p-0 col-6  text-right">{{item.minimum_investment}}</div>
+        </div>
+        <div class="row p-2 border-top border-bottom col-12 ml-0 ">
+          <div class="p-0 col-6 ">Investment type</div>
+          <div class="p-0 col-6  text-right">{{item.type}}</div>
+        </div>
+        <div class="row p-2 border-top border-bottom  col-12 ml-0 ">
+          <div class="p-0 col-6 ">Mortage (LTV)</div>
+          <div class="p-0 col-6  text-right">{{item.loan_to_value}}</div>
+        </div>
+        <div class="row p-2 border-top border-bottom  col-12 ml-0 ">
+          <div class="p-0 col-6 ">Holding Period</div>
+          <div class="p-0 col-6  text-right">{{item.holding_period}}</div>
+        </div>
+        <div class="row p-2 border-top border-bottom  col-12 ml-0 ">
+          <div class="p-0 col-6 ">Expected Return on Equity</div>
+          <div class="p-0 col-6  text-right">{{item.expected_roi}}</div>
+        </div>
+        <div class="row justify-content-center p-2 border-top col-12  ml-0 ">
+          <button class="btn btn-success">
+            MORE DETAILS
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

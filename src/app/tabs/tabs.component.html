@@ -1,0 +1,12 @@
+<ul class="nav flex-column col-2 position-fixed p-0">
+  <li class="logo">
+    <div>
+      <a href="" class="nav-link text-center">
+        <img src="/assets/img/logo.png" alt="">
+      </a>
+    </div>
+  </li>
+  <li *ngFor="let tab of tabList" [ngClass]="{'active': tab.active == true }" class="nav-item" >
+    <a class="nav-link text-center" href="{{tab.href}}">{{tab.name}}</a>
+  </li>
+</ul>

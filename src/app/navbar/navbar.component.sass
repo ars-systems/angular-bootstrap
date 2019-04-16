@@ -1,0 +1,45 @@
+img
+    height: 1.25rem
+    margin-right: 5px;
+.navbar
+    background: #fff;
+fa
+    float: left
+    color: black
+    font-size: 18px;
+.nav-item
+    display: flex
+    align-items: center
+    padding-left: 10px
+    padding-right: 10px;
+.nav-link
+    color: rgba(0,0,0,.5) !important 
+.long-menu
+    display: none
+
+
+@media (min-width: 992px)
+    #long-menu
+        display: none!important
+    .navbar-nav .dropdown-menu
+        right: 0;
+        width: fit-content;
+        left: auto;
+
+  
+@media (max-width: 992px)
+  .user-set
+    justify-content: center
+    flex-direction: row;
+
+    .dropdown-menu
+        position: absolute;
+        width: 100%
+    
+@media (max-width: 767px)
+  .long-menu
+    display: block
+
+
+
+    

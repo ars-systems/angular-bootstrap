@@ -1,0 +1,40 @@
+img
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+button
+    color: #ffffff !important
+.info
+    background: #222f3d
+    color: #fff;
+    text-align: center;
+    h5
+        font-size: 15px;
+    h6
+        font-size: 12px
+.progress
+    height: 0.5rem;
+
+.card
+    margin-bottom: 15px;
+    font-size: 1vmax;
+.finance
+    position: absolute;
+    top: -7px;
+    left: -9px;
+    z-index: 2
+    img
+        width: 60%;
+
+@media (max-width: 575px)
+  .card-body
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available
+    .row > div
+        &:not(:last-child)
+            display: none
+        &:last-child
+            border: none!important;
+            width: fit

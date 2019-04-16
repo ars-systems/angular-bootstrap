@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 p-0">
+      <app-tabs></app-tabs>
+      <div>
+      </div>
+    </div>
+    <div class="col-12 col-md-10 column items">
+        <div class="col-12">
+          <app-navbar></app-navbar>
+        </div>
+        <div class="main row col-12 p-4 ">
+          <app-large-card *ngFor="let item of items" [item]="item" class="mb-5 col-12"></app-large-card>
+          <app-card *ngFor="let item of items" [item]="item" class="col-12 col-md-6 col-sm-6 col-lg-4"></app-card>
+          <app-card *ngFor="let item of items" [item]="item" class="col-12 col-md-6 col-sm-6 col-lg-4"></app-card>
+          <app-card *ngFor="let item of items" [item]="item" class="col-12 col-md-6 col-sm-6 col-lg-4"></app-card>
+        </div>
+      </div>
+  </div>
+</div>
